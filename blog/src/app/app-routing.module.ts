@@ -1,12 +1,12 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { BlogComponent } from './components/blog/blog.component';
-import { SinglePostComponent } from './components/single-post/single-post.component';
+import { BlogComponent } from './pages/blog/blog.component';
+import { BlogPostsComponent } from './pages/blog-posts/blog-posts.component';
+
 
 const routes: Routes = [
-  {path: 'blogs', component: BlogComponent},
-  {path: 'blogs/:id', component: SinglePostComponent}
-  {path: '**', redirectTo: 'blogs', pathMatch: 'full'}
+  {path: '', component: BlogComponent},
+  {path: 'single-post', component: BlogPostsComponent},
 ];
 
 @NgModule({
