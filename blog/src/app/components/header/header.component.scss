@@ -1,5 +1,9 @@
 header {
   padding: 16px 32px;
+
+  a {
+    text-decoration: none;
+  }
 }
 
 header .wrapper {
@@ -24,4 +28,19 @@ header nav {
 
 header nav > * {
   margin-left: 24px;
+}
+
+.title-container {
+  display: flex;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+
+  img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+  }
 }

@@ -8,6 +8,10 @@ import { FooterComponent } from './components/footer/footer.component';
 import { BlogComponent } from './pages/blog/blog.component';
 import { BlogPostsComponent } from './pages/blog-posts/blog-posts.component';
 
+import { BlogService } from './services/blog.service';
+import { HttpClientModule } from '@angular/common/http';
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,9 +22,10 @@ import { BlogPostsComponent } from './pages/blog-posts/blog-posts.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [BlogService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
