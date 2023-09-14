@@ -7,19 +7,8 @@ import { BlogService } from 'src/app/services/blog.service';
   styleUrls: ['./blog.component.scss']
 })
 export class BlogComponent implements OnInit {
-
-  /*
-  projects = [{
-    name: 'Project One',
-    description: 'This is the description for the first project.'
-  }, {
-    name: 'Project Two',
-    description: 'This is the description for the second project.'
-  }, {
-    name: 'Project Three',
-    description: 'Description for third project.'
-  }];
-  */
+  blogPosts: any;
+  errorMessage: any;
 
   constructor(private blogService: BlogService) { }
 
@@ -28,11 +17,9 @@ export class BlogComponent implements OnInit {
   }
 
   getPosts() {
-    this.blogService.getPosts().subscribe(
-      data => {
-        console.log(data);
-      }
-    )
+    this.blogService.getPosts().subscribe((data) => {
+      this.blogPosts = data;
+    });
   }
 
 }
