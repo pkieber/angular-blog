@@ -1,0 +1,21 @@
+img {
+  display: block;
+  width: calc(100% + 60px);
+  height: 240px;
+  margin: 0 -30px;
+  margin-bottom: 50px;
+  object-fit: cover;
+  object-position: center center;
+}
+
+h2 {
+  margin-top: 50px;
+}
+
+ul li {
+  margin: 16px 0;
+}
+
+p {
+  margin: 0;
+}

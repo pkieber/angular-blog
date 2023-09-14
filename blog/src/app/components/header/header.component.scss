@@ -1,0 +1,27 @@
+header {
+  padding: 16px 32px;
+}
+
+header .wrapper {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+header h1 span {
+  margin-right: 10px;
+}
+
+header h1 a {
+  color: #333;
+}
+
+header nav {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+header nav > * {
+  margin-left: 24px;
+}

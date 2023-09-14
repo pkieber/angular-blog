@@ -1,1 +1,15 @@
-<p>blog works!</p>
+<img
+  src="https://images.unsplash.com/photo-1568404523320-522347472e63?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80"
+  alt="Portfolio Photo"
+>
+
+<p><strong>This is a short paragraph about me.</strong> Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt ducimus delectus blanditiis dolorum autem iusto, est doloremque in. Tenetur expedita deserunt id voluptate, vitae voluptas fugiat eaque doloremque illo dolorum?</p>
+
+<h2>My Projects</h2>
+
+<ul>
+  <li *ngFor="let project of projects">
+    <a href="#">{{project.name}}</a>
+    <p>{{project.description}}</p>
+  </li>
+</ul>

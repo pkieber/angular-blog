@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class HeaderComponent {
 
+  siteName = 'PK Blog';
+
+  constructor() { }
+
+  ngOnInit() {
+  }
+
 }
